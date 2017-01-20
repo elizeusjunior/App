@@ -1,0 +1,21 @@
+Coding Exercise
+
+Create a simple "Library" webapp using html, js, and jquery that allows a user to manage a list of books.
+
+Requirements
+
+	all books should have values for "title" and "author" and stored in an array.
+	there should be functions for adding and removing a book from the library (ui and array).
+	the user interface should include the following:
+	current listing of all the books in the library.
+	"Add Book" button that when clicked displays the "Add Book Form"
+	"Add Book Form" should include text fields for the "title" and "author" attributes of a book field.
+	"Add Book Form" should include a "Done" button that when clicked validates that values for "title" and "author" have 
+		been provided. If these values are not entered an error message is displayed to the user. If these values are entered 
+		then the "Book" is added to the "library" and the list on the ui is updated.
+	There should be a way for the user to remove a book either with "x" or garbage can icon that when clicked 
+		removes the book from the "library" and the UI.
+		
+When done, zip up your project and email it to Freddy.
+	
+

@@ -1,0 +1,27 @@
+{
+  "name": "MyLibrary",
+  "version": "1.0.0",
+  "description": "Webapp for an awesome library",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": ["Library"],
+  "authors": [
+    "Fernando Badin"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "angular": "~1.6.1",
+    "jQuery": "~1.9.1"
+
+  }
+}
