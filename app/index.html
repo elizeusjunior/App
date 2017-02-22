@@ -176,7 +176,8 @@
 
             <div class="row" style="margin-top: 30px;" >
                 
-                <div id="book_scope" class="col-xs-12" ng-repeat="book in books | orderBy: myCtrl:orderby | filter: search ">
+                <!-- | orderBy: myCtrl:orderby | filter: search  -->
+                <div id="book_scope" class="col-xs-12" ng-repeat="book in books | filter: search | orderBy: orderby  ">
 
                     <div class="col-xs-12 col-sm-8" style="margin-top: 10px;">
                         <ul class="media-list">
@@ -198,7 +199,7 @@
 
                       <div class="col-sm-4" style="margin-top: 10px;">
                           
-                          <button class="btn btn-lg btn-default" ng-click="removeBook($index)">
+                          <button class="btn btn-lg btn-default" ng-click="removeBook(book)">
                             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
                           </button>
                       </div>
@@ -253,10 +254,11 @@
               }
 
               //remove book from the scope        
-              $scope.removeBook = function(index){
+              $scope.removeBook = function(item){
                   
+                  var index = $scope.books.indexOf(item);
                   $scope.books.splice(index, 1);
-                    
+                      
               }
         });
 
