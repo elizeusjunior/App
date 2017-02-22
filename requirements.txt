@@ -1,6 +1,4 @@
-Coding Exercise
-
-Create a simple "Library" webapp using html, js, and jquery that allows a user to manage a list of books.
+A simple "Library" webapp using html, css, bootstrap, angular, js, and jquery that allows a user to manage a list of books.
 
 Requirements
 
@@ -15,7 +13,9 @@ Requirements
 		then the "Book" is added to the "library" and the list on the ui is updated.
 	There should be a way for the user to remove a book either with "x" or garbage can icon that when clicked 
 		removes the book from the "library" and the UI.
+	Should have a search bar to find the specific book
+	Books should be organized by title
 		
-When done, zip up your project and email it to Freddy.
+		
 	
 
