@@ -1,10 +1,8 @@
-# Project Title
+# MyLibrary Skills Project
 
-MyLibrary Skills Project
+## Purpose of the project
 
-## Project purpose
-
-The purpose of this project is to demonstrate in a very simple way, part of my IT skills.
+The purpose of this project is to demonstrate in a very simple way, part of my IT skills, showing quality of code.
 
 ## Library Features
 	
@@ -66,5 +64,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 # Other projects
 
 http://www.buddyget.net
+
 *The fast and easy way to share budget with your family and buddies.*
+
 **Sign up for free!**
