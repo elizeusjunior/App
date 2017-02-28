@@ -14,7 +14,7 @@ The purpose of this project is to demonstrate in a very simple way, part of my I
 
     You can search a desired book using the search bar
  	
-*   The user interface includes the following:
+*      The user interface includes the following:
 *   Current listing of all the books in the library.
 *   "Add Book" button that when clicked displays the "Add Book Form"
 *   "Add Book Form" includes text fields for the "title" and "author" attributes of a book field.
