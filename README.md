@@ -4,11 +4,11 @@ MyLibrary Skills Project
 
 ## Project purpose
 
-The purpose of this project is to demonstrate in a very simple way, part of my personal IT skills.
+The purpose of this project is to demonstrate in a very simple way, part of my IT skills.
 
 ## Library Features
 	
-	* []() All books have values for "title", "author" and "picture" and are stored in an array.
+	* [1](https://angularjs.org/) All books have values for "title", "author" and "picture" and are stored in an array.
 	* There  are functions for adding and removing a book from the library (UI and array).
 	* Books are organized in alphabetic order
 	* You can search a desired book using the search bar
