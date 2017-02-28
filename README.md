@@ -8,18 +8,20 @@ The purpose of this project is to demonstrate in a very simple way, part of my I
 
 ## Library Features
 	
-	* [1](https://angularjs.org/) All books have values for "title", "author" and "picture" and are stored in an array.
-	* There  are functions for adding and removing a book from the library (UI and array).
-	* Books are organized in alphabetic order
-	* You can search a desired book using the search bar
-	
-	* The user interface includes the following:
-	** Current listing of all the books in the library.
-	** "Add Book" button that when clicked displays the "Add Book Form"
-	** "Add Book Form" includes text fields for the "title" and "author" attributes of a book field.
-	** "Add Book Form" includes a "Done" button that when clicked validates that values for "title" and "author" have 
-		been provided. If these values are not entered an error message is displayed to the user. If these values are entered then the "Book" is added to the "library" and the list on the ui is updated.
-	** Way to remove a book using a garbage can icon, when clicked removes the book from the "library" and the UI.
+* All books have values for "title", "author" and "picture" and are stored in an array.
+* There  are functions for adding and removing a book from the library (UI and array).
+* Books are organized in alphabetic order
+
+### You can search a desired book using the search bar
+ 	
+* * The user interface includes the following:
+* * Current listing of all the books in the library.
+* * "Add Book" button that when clicked displays the "Add Book Form"
+* * "Add Book Form" includes text fields for the "title" and "author" attributes of a book field.
+* * "Add Book Form" includes a "Done" button that when clicked validates that values for "title" and "author" have 
+     been provided. If these values are not entered an error message is displayed to the user. 
+     If these values are entered then the "Book" is added to the "library" and the list on the ui is updated.
+* * Way to remove a book using a garbage can icon, when clicked removes the book from the "library" and the UI.
 
 
 ### Installing
