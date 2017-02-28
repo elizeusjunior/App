@@ -29,7 +29,7 @@ The purpose of this project is to demonstrate in a very simple way, part of my I
 Download it or create a new folder on your computer, and clone it using git clone:
 
 ```
-git clone https://fbadin@bitbucket.org/fbadin/mylibrary.git 
+$ git clone https://fbadin@bitbucket.org/fbadin/mylibrary.git 
 ```
 
 Then a new folder named MyLibrary will be created.
@@ -62,3 +62,9 @@ I am using [Git]() for versioning it :)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+# Other projects
+
+http://www.buddyget.net
+*The fast and easy way to share budget with your family and buddies.*
+**Sign up for free!**
