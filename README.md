@@ -12,10 +12,10 @@ The purpose of this project is to demonstrate in a very simple way, part of my I
 * There  are functions for adding and removing a book from the library (UI and array).
 * Books are organized in alphabetic order
 
-    You can search a desired book using the search bar
+- You can search a desired book using the search bar
  	
-*      The user interface includes the following:
-*   Current listing of all the books in the library.
+    - The user interface includes the following:
+    - Current listing of all the books in the library.
 *   "Add Book" button that when clicked displays the "Add Book Form"
 *   "Add Book Form" includes text fields for the "title" and "author" attributes of a book field.
 *   "Add Book Form" includes a "Done" button that when clicked validates that values for "title" and "author" have 
