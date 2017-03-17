@@ -5,7 +5,7 @@
 The purpose of this project is to demonstrate in a very simple way, part of my IT skills.
 
 This is a Small Library APP, using a mock web server. 
-It was created using Single Page Application (SPA) with Angular 1.6 connecting in a small NOSQL Webserver (json-server)
+It is created using Single Page Application (SPA) and Angular 1.6, connecting in a small NOSQL Webserver (json-server)
 
 ## Features of the Library
 	
