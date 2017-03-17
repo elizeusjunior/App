@@ -82,10 +82,8 @@ I am using [Git]() for versioning it :)
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-# Other projects
+# Find more about my work on
 
-http://www.buddyget.net
-
-*The fast and easy way to share budget with your family and buddies.*
-
-**Sign up for free!**
+```
+http://www.fbadin.com
+```
