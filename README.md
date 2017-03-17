@@ -82,8 +82,6 @@ I am using [Git]() for versioning it :)
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-# Find more about my work on
+## Find more about my work on
 
-```
 http://www.fbadin.com(http://fbadin.com/)
-```
