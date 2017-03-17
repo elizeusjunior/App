@@ -1,0 +1,188 @@
+ <!-- Add new book modal -->
+    <div id="newbookModal"  class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title" style="text-align: center;">
+
+                        <b style="color: blue;">Add new book</b>
+                        
+                </div>
+                <div class="modal-body" style="text-align: center;">
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4 id="id_label_books" style="color: black;">Please, fill out the fields. They are required.</h4>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 20px;">
+
+                        <div class="col-xs-4">
+                            <label for="id_bookTitle"> Book Title </label>
+                        </div>
+
+                        <div class="col-xs-7 col-sm-4">
+                            <input id="id_bookTitle" ng-model="title" type="text" class="form-control"  placeholder="Book title" autofocus >
+                        </div>
+
+                    </div>
+
+                    <div class="row" style="margin-top: 20px;">
+
+                        <div class="col-xs-4">
+                            <label for="id_bookAuthor"> Book Author </label>
+                        </div>
+
+                        <div class="col-xs-7 col-sm-4">
+                            <input id="id_bookAuthor" ng-model="author" type="text" class="form-control"  placeholder="Book Author">
+                        </div>
+
+                    </div>
+
+                    <div class="row" style="margin-top: 20px;">
+
+                        <div class="col-xs-4 col-xs-push-4">
+                           <button id="btn-done" class="btn btn-md btn-success" ng-click="addBook()" style="width: 100%; display: none;" > Done </button>
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+    <div class="container" >
+
+        <ul class="breadcrumb" style="margin-top: 80px; background-color: #eee;" >
+            <li class="active"><a href="">Home</a></li>
+        </ul>
+
+        <div class="row" style="margin-top: 20px;">
+
+          <div class="col-xs-12 col-sm-4" >
+              <a id="btn_add"   class="btn btn-lg btn-primary" style="width: 100%;" >
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Book
+              </a>
+          </div>
+
+          
+
+        </div>
+
+        <div class="jumbotron" style="background: white;">
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6" style="margin-top: -15px;">
+                <!--  -->
+                    <h2>Books Summary</h2>
+                </div>
+
+                <div class="col-xs-12 col-sm-5">
+                    <input type="text" ng-model="search" class="form-control search_bar" placeholder="Search" />
+                </div>
+
+            </div>
+            
+
+
+            <div class="row" style="margin-top: 30px;" >
+                
+                <!-- | orderBy: myCtrl:orderby | filter: search  -->
+                <div id="book_scope" class="col-xs-12" ng-repeat="book in books | filter: search | orderBy: orderby  ">
+
+                    <div class="col-xs-12 col-sm-8" style="margin-top: 10px;">
+                        <ul class="media-list">
+                            <li class="media" >
+                                <div class="media-left media-middle">
+                                    <a href="#">
+                                      <img class="media-object img-thumbnail"
+                                       ng-src={{book.picture}} alt="Book Picture" style="max-width: 100px;">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="media-heading" style="color: black;">{{book.title}}
+                                     
+                                    <p style="margin-top: 10px;">{{book.author}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-sm-4" style="margin-top: 10px;">
+                          
+                          <button class="btn btn-lg btn-default" ng-click="removeBook(book)">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+                          </button>
+                      </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+
+            //shows the book modal to add new book
+            $('#btn_add').click(function(event){
+                
+                $('#newbookModal').modal();
+                
+            });
+
+            //manage the button and warning label
+            function releaseLockDoneBtn(){
+                
+                var bookTitle = $('#id_bookTitle').val();
+                var bookAuthor = $('#id_bookAuthor').val();
+
+                if(bookTitle != '' && bookAuthor != ''){
+                    $('#id_label_books').css('color', 'black');
+                    $('#btn-done').show();
+                } else {
+
+                    if(bookTitle == '' && bookAuthor == ''){
+                        $('#id_label_books').css('color', 'red');
+                        $('#btn-done').hide();
+                    } else {
+                        $('#id_label_books').css('color', 'black');
+                        $('#btn-done').hide();
+                    } 
+                } 
+            }
+
+            $('#id_bookTitle').keyup( function(){
+                releaseLockDoneBtn();
+            });
+
+            $('#id_bookAuthor').keyup( function(){
+                releaseLockDoneBtn();
+            });
+
+            //everything is ready to add
+            $('#btn-done').click(function(){
+
+                $('#btn-done').hide();
+                
+                $('#newbookModal').modal('hide');
+
+
+            });
+
+
+
+        });
+
+    </script> 
