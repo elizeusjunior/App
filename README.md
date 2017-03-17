@@ -2,12 +2,15 @@
 
 ## Purpose of the project
 
-The purpose of this project is to demonstrate in a very simple way, part of my IT skills, showing quality of code.
+The purpose of this project is to demonstrate in a very simple way, part of my IT skills.
 
-## Library Features
+This is a Small Library APP, using a mock web server. 
+It is created using Single Page Application (SPA) and Angular 1.6, connecting in a small NOSQL Webserver (json-server)
+
+## Features of the Library
 	
-* All books have values for "title", "author" and "picture" and are stored in an array.
-* There  are functions for adding and removing a book from the library (UI and array).
+* All books have values for "title", "author" and "picture" and are stored in an json web-server.
+* There  are functions for adding and removing a book from the library.
 * Books are organized in alphabetic order
 
 - You can search a desired book using the search bar
@@ -24,22 +27,40 @@ The purpose of this project is to demonstrate in a very simple way, part of my I
 
 ### Installing
 
-Download it or create a new folder on your computer, and clone it using git clone:
+First, make sure that you have bower installed on your computer, from NPM (Node Package Modules)
+
+Download the project or create a new folder on your computer, and clone it using git clone:
 
 ```
 $ git clone https://fbadin@bitbucket.org/fbadin/mylibrary.git 
 ```
 
-Then a new folder named MyLibrary will be created.
-Brower to index.html and open it on your browser.
+browse to public folder and execute
+```
+bower install
+```
+
+it will install all the dependencies of the project
+
+after, you need to install the mock web server. We are using json-server
 
 ```
-app/index.html
+npm install json-server -g
 ```
+
+now, browse to the root library folder, and execute the command to start the web server
+
+```
+json-server --watch db.json
+```
+
+Type the url http://localhost:3000/app/ on your browser and enjoy :)
+
+
 
 ## Built With
 
-* [Angular](https://angularjs.org/) -  The base web framework used
+* [Angular 1.6](https://angularjs.org/) -  The base web framework used
 * [Javascript](https://www.javascript.com/) - Javascript
 * [HTML](http://html.com/) - HTML5
 * [CSS](https://www.w3schools.com/cssref/) - CSS3
@@ -61,10 +82,6 @@ I am using [Git]() for versioning it :)
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-# Other projects
+## Find more about my work on
 
-http://www.buddyget.net
-
-*The fast and easy way to share budget with your family and buddies.*
-
-**Sign up for free!**
+http://www.fbadin.com
