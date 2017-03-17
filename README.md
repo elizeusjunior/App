@@ -85,5 +85,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 # Find more about my work on
 
 ```
-http://www.fbadin.com
+http://www.fbadin.com(http://fbadin.com/)
 ```
