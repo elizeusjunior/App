@@ -61,11 +61,12 @@ Type the url http://localhost:3000/app/ on your browser and enjoy :)
 ## Built With
 
 * [Angular 1.6](https://angularjs.org/) -  The base web framework used
+* [JQuery](https://jquery.com/) - Making some scripting simplier
+* [Bootstrap](http://getbootstrap.com/) - The UI library for the web responsive web app
+* [Json-Server](http://www.betterpixels.co.uk/projects/2015/05/09/mock-up-your-rest-api-with-json-server/) - Mock up the REST API with JSON Server
 * [Javascript](https://www.javascript.com/) - Javascript
 * [HTML](http://html.com/) - HTML5
 * [CSS](https://www.w3schools.com/cssref/) - CSS3
-* [JQuery](https://jquery.com/) - Making some scripting simplier
-* [Bootstrap](http://getbootstrap.com/) - The UI library for the web responsive web app
 * [Bower](https://bower.io/) - A package manager to make easier project's dependencies
 * [Font-Awesome Icons](http://fontawesome.io/icons/) - Icons to make it more elegant :)
 
