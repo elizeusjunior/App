@@ -1,11 +1,11 @@
-# MyLibrary Skills Project
+# MyLibrary App Project
 
 ## Purpose of the project
 
-The purpose of this project is to demonstrate in a very simple way, part of my IT skills.
+My Library App is a open-source personal educational project to demonstrate the use of several modern technologies and frameworks all in one simple application. 
 
 This is a Small Library APP, using a mock web server. 
-It is created using Single Page Application (SPA) and Angular 1.6, connecting in a small NOSQL Webserver (json-server)
+Created using Single Page Application (SPA) and Angular 1.6, it connects with a REST Mock Webserver w/ NOSQL database;
 
 ## Features of the Library
 	
