@@ -2,10 +2,11 @@
 
 ## Purpose of the project
 
-My Library App is a open-source personal educational project to demonstrate the use of several modern technologies and frameworks all in one simple application. 
+My Library App is a open-source personal educational app to demonstrate the use of modern technologies and frameworks all in one simple application. 
 
-This is a Small Library APP, using a mock web server. 
-Created using Single Page Application (SPA) and Angular 1.6, it connects with a REST Mock Webserver w/ NOSQL database;
+This is a Small Library APP.
+ 
+Created using Single Page Application (SPA) and Angular 1.6, it connects to a REST Mock Web server with a NO-SQL database;
 
 ## Features of the Library
 	
