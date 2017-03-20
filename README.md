@@ -25,6 +25,9 @@ Created using Single Page Application (SPA) and Angular 1.6, it connects to a RE
        If these values are entered then the "Book" is added to the "library" and the list on the ui is updated.
 *   Way to remove a book using a garbage can icon, when clicked removes the book from the "library" and the UI.
 
+## App Components
+
+![alt text](http://www.buddyget.net/static/img/mylibrary.png "Components Design")
 
 ### Installing
 
