@@ -2,9 +2,7 @@
 
 ## Purpose of the project
 
-My Library App is a open-source personal educational app to demonstrate the use of modern technologies and frameworks all in one simple application. 
-
-This is a Small Library APP.
+My Small Library App is a open-source, personal and educational app to demonstrate the use and integration of modern technologies and frameworks all in one simple application. 
  
 Created using Single Page Application (SPA) and Angular 1.6, it connects to a REST Mock Web server with a NO-SQL database;
 
@@ -31,7 +29,7 @@ Created using Single Page Application (SPA) and Angular 1.6, it connects to a RE
 
 ### Installing
 
-First, make sure that you have bower installed on your computer, from NPM (Node Package Modules)
+First, make sure that Nodejs installed, to use NPM (Node Package Modules)
 
 Download the project or create a new folder on your computer, and clone it using git clone:
 
@@ -39,27 +37,38 @@ Download the project or create a new folder on your computer, and clone it using
 $ git clone https://fbadin@bitbucket.org/fbadin/mylibrary.git 
 ```
 
-browse to public folder and execute
+Browse to public folder and execute
+```
+npm install
+```
+It will grab the modules dependencies. 
+
+After, execute
 ```
 bower install
 ```
+it will install web dependencies of the project
 
-it will install all the dependencies of the project
-
-after, you need to install the mock web server. We are using json-server
-
-```
-npm install json-server -g
-```
-
-now, browse to the root library folder, and execute the command to start the web server
+Browse to the app root folder, and execute the following command to start the web server
 
 ```
 json-server --watch db.json
 ```
+Ok. You are good to start.
 
-Type the url http://localhost:3000/app/ on your browser and enjoy :)
+## Executing. There are two ways to try the project.
 
+### 1 - Typing direct the url on your web-browser
+```
+http://localhost:3000/app/
+```
+
+### 2 - Using Grunt.
+Go to public/ folder and type
+```
+grunt
+```
+![alt text](https://gruntjs.com/img/og.png "Grunt")
 
 
 ## Built With
@@ -72,8 +81,12 @@ Type the url http://localhost:3000/app/ on your browser and enjoy :)
 * [HTML](http://html.com/) - HTML5
 * [CSS](https://www.w3schools.com/cssref/) - CSS3
 * [Bower](https://bower.io/) - A package manager to make easier project's dependencies
-* [Font-Awesome Icons](http://fontawesome.io/icons/) - Icons to make it more elegant :)
+* [Font-Awesome Icons](http://fontawesome.io/icons/) - Fine icons to make it cool
+* [Grunt](https://gruntjs.com/) - The JavaScript Task Runner
+* [Karma](karma-runner.github.io) - Karma - Spectacular Test Runner for JavaScript
+* [Yeoman](http://yeoman.io/) - The web scaffolding for modern apps.
 
+The base of this project was generated using Yeoman. It is a great tool to start. 
 
 ## Versioning
 
