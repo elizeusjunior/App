@@ -64,12 +64,23 @@ http://localhost:3000/app/
 ```
 
 ### 2 - Using Grunt.
+![alt text](https://gruntjs.com/img/og.png "Grunt")
+
 Go to public/ folder and type
 ```
 grunt
 ```
-![alt text](https://gruntjs.com/img/og.png "Grunt")
 
+Grunt is a javascript task runner which will generate a optimized package, deploy it into a dist folder and launch on your web-browser. There are other options to help as well as: "Grunt test", to start karma unit tests, "Grunt dist", to only generate the package, "Grunt serve" to start-up the web-server, and "Grunt run", to quick generate the package deploy and start to serve.
+
+## Testing using Karma.
+![alt text](https://karma-runner.github.io/assets/img/banner.png "Karma")
+
+To manually test the project, browse to public/test/ folder and type the command:
+
+```
+karma start karma.conf.js
+``` 
 
 ## Built With
 
