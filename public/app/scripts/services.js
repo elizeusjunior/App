@@ -5,16 +5,17 @@ angular.module('libraryApp')
         .service('booksFactory', [ 'baseURL', '$resource', function(baseURL, $resource) {
         
             this.getBooks = function(){
-                return $resource(baseURL+"books", null,  { 'save': { method:'POST' }} );
-            }
+                return $resource(baseURL+'books');
+            };
+
 
             this.postBook = function(){
-                return $resource(baseURL+"books", null,  { 'save': { method:'POST' }} );
-            }
+                return $resource(baseURL+'books');
+            };
 
             this.deleteBook = function(id){
-                return $resource(baseURL+"books/"+id, null,  { 'delete': { method:'DELETE' }} );
-            }            
+                return $resource(baseURL+'books/'+id, null,  { 'delete': { method:'DELETE' }} );
+            };            
 
         }])
         

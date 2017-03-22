@@ -5,42 +5,44 @@ angular.module('libraryApp')
         
     .controller('IndexController', ['$scope', 'booksFactory', function($scope, booksFactory) {
         
-        $scope.orderby    = 'title';
-
-        $scope.showBooks  = false;
-        $scope.message    = "Loading ...";
-
-
         //get the list of books
-        function loadLooks(){
-            booksFactory.getBooks().query(
-                function(response) {
+        $scope.loadBooks = function(){
+            
+            booksFactory.getBooks().query( //query returns A array
+                
+                null, //params
+
+                function(response) { //success
                     $scope.books = response;
                     $scope.showBooks = true;
                 },
-                function(response) {
-                    $scope.message = "Error: "+response.status + " " + response.statusText;
+                function(response) { // error
+                    $scope.message = 'Error: '+response.status + ' ' + response.statusText;
                 }
             );  
         }
-
-        loadLooks();
-        
 
         $scope.addBook = function(){
 
             var book = {title:$scope.title, author:$scope.author, picture: 'images/book.jpeg'};
 
-            //$scope.books.push(book);
+            booksFactory.postBook().save(
+                null, //params
+                book,
 
-            booksFactory.postBook().save(book);
-
-            loadLooks();
-
-            $scope.author = '';
-            $scope.title = '';
-
-        }
+                function(response){
+                    $scope.books.push(response); //response == book
+                },
+                function(response){
+                    console.log('Error: '+response.status + ' ' + response.statusText)
+                }
+            );
+            
+            $scope.author   = '';
+            $scope.title    = '';
+            $scope.books    = [];
+            
+        };
 
         //remove book from the scope        
         $scope.removeBook = function(book){
@@ -51,7 +53,14 @@ angular.module('libraryApp')
             $scope.books.splice(index, 1);
 
             
-        }
+        };
+
+        $scope.orderby    = 'title';
+
+        $scope.showBooks  = false;
+        $scope.message    = 'Loading ...';
+
+        $scope.loadBooks();
        
 
     }])
