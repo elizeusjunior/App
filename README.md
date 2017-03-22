@@ -6,6 +6,9 @@ My Small Library App is a open-source, personal and educational app to demonstra
  
 Created using Single Page Application (SPA) and Angular 1.6, it connects to a REST Mock Web server with a NO-SQL database;
 
+![alt text](https://code-maven.com/img/angularjs.png "AngularJS")
+
+
 ## Features of the Library
 	
 * All books have values for "title", "author" and "picture" and are stored in an json web-server.
@@ -71,12 +74,13 @@ Go to public/ folder and type
 grunt
 ```
 
-Grunt is a javascript task runner which will generate a optimized package, deploy it into a dist folder and launch on your web-browser. There are other options to help as well as: "Grunt test", to start karma unit tests, "Grunt dist", to only generate the package, "Grunt serve" to start-up the web-server, and "Grunt run", to quick generate the package deploy and start to serve.
+Grunt is a javascript task runner which will generate a optimized package, deploy it into a dist folder and launch on your web-browser. 
+There are other options to support you as well as: "Grunt test", to start Karma Unit tests, "Grunt dist", to only generate the package, "Grunt serve" to start-up the web-server, and "Grunt run", to quick generate the package deploy and start serving.
 
 ## Testing using Karma.
 ![alt text](https://karma-runner.github.io/assets/img/banner.png "Karma")
 
-To manually test the project, browse to public/test/ folder and type the command:
+To manually the Unit Test of the project, browse to public/test/ folder and type the command:
 
 ```
 karma start karma.conf.js
