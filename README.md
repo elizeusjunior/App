@@ -40,24 +40,25 @@ Download the project or create a new folder on your computer, and clone it using
 $ git clone https://fbadin@bitbucket.org/fbadin/mylibrary.git 
 ```
 
-Browse to public folder and execute
+Browse to public folder and execute:
 ```
 npm install
 ```
-It will grab the modules dependencies. 
+It will install on your machine all the module's dependencies. 
 
-After, execute
+Then, execute:
 ```
 bower install
 ```
-it will install web dependencies of the project
+It will fetch all the web-dependencies for the project
 
-Browse to the app root folder, and execute the following command to start the web server
+Browse to the app root folder, and execute the following command to start the web server:
 
 ```
 json-server --watch db.json
 ```
-Ok. You are good to start.
+
+Ok. You are good to go.
 
 ## Executing. There are two ways to try the project.
 
@@ -77,7 +78,7 @@ grunt
 Grunt is a javascript task runner which will generate a optimized package, deploy it into a dist folder and launch on your web-browser. 
 There are other options to support you as well as: "Grunt test", to start Karma Unit tests, "Grunt dist", to only generate the package, "Grunt serve" to start-up the web-server, and "Grunt run", to quick generate the package deploy and start serving.
 
-## Testing using Karma.
+## Unit Tests using Karma.
 ![alt text](https://karma-runner.github.io/assets/img/banner.png "Karma")
 
 To manually the Unit Test of the project, browse to public/test/ folder and type the command:
