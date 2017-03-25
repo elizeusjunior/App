@@ -30,11 +30,12 @@ Created using Single Page Application (SPA) and Angular 1.6, it connects to a RE
 
 ![alt text](http://www.buddyget.net/static/img/mylibrary.png "Components Design")
 
+
 ### Installing
 
 First, make sure that Nodejs installed, to use NPM (Node Package Modules)
 
-Download the project or create a new folder on your computer, and clone it using git clone:
+Download the package  or clone it using git clone:
 
 ```
 $ git clone https://fbadin@bitbucket.org/fbadin/mylibrary.git 
