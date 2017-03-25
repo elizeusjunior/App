@@ -40,29 +40,23 @@ Download the project or create a new folder on your computer, and clone it using
 $ git clone https://fbadin@bitbucket.org/fbadin/mylibrary.git 
 ```
 
-Browse to public folder and execute:
+Thereafter, move to the public/ folder and do the following to install the node modules and the bower components:
 ```
 npm install
-```
-It will install on your machine all the module's dependencies. 
-
-Then, execute:
-```
 bower install
 ```
-It will fetch all the web-dependencies for the project
 
-Browse to the app root folder, and execute the following command to start the web server:
-
+Move to the app root folder, and execute the following command to start the web server:
 ```
 json-server --watch db.json
 ```
 
-Ok. You are good to go.
+Now your client application is ready. You can run the App and also, open the code in your text editor.
 
-## Executing. There are two ways to try the project.
 
-### 1 - Typing direct the url on your web-browser
+## Running the App. There are two ways to do it.
+
+### 1 - Direct type the url on your web-browser
 ```
 http://localhost:3000/app/
 ```
