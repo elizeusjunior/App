@@ -1,15 +1,15 @@
 # MyLibrary App Project
 
-## Purpose of the project
+## Project goal
 
-My Small Library App is a open-source, personal and educational app to demonstrate the use and integration of modern technologies and frameworks all in one simple application. 
+My Small Library App is a open-source, personal and educational app to show and use modern technologies and frameworks all in one simple application. 
  
 Created using Single Page Application (SPA) and Angular 1.6, it connects to a REST Mock Web server with a NO-SQL database;
 
 ![alt text](https://code-maven.com/img/angularjs.png "AngularJS")
 
 
-## Features of the Library
+## Library description
 	
 * All books have values for "title", "author" and "picture" and are stored in an json web-server.
 * There  are functions for adding and removing a book from the library.
@@ -33,7 +33,7 @@ Created using Single Page Application (SPA) and Angular 1.6, it connects to a RE
 
 ### Installing
 
-First, make sure that Nodejs installed, to use NPM (Node Package Modules)
+First make sure that NodeJS is installed, in order to use NPM (Node Package Modules)
 
 Download the package  or clone it using git clone:
 
@@ -97,7 +97,7 @@ karma start karma.conf.js
 * [Karma](karma-runner.github.io) - Karma - Spectacular Test Runner for JavaScript
 * [Yeoman](http://yeoman.io/) - The web scaffolding for modern apps.
 
-The base of this project was generated using Yeoman. It is a great tool to start. 
+The base of this project was generated using Yeoman. It is also a great tool to start. 
 
 ## Versioning
 
@@ -110,7 +110,3 @@ I am using [Git]() for versioning it :)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Find more about my work on
-
-http://www.fbadin.com
